@@ -16,6 +16,7 @@ const translationRU = {
 
 // Applying the languages
 function applyLanguage() {
+    document.getElementById('language-select-button').style.backgroundImage = "url('./img/flag_" + selectedLang + ".png')";
     localStorage.setItem('lang', selectedLang);
     elements.forEach(element => {
         if (element.getAttribute("lang") in translationSR) {
@@ -49,6 +50,22 @@ function switchToEN() {
 
 function switchToSR() {
     selectedLang = 'sr';
+    applyLanguage();
+}
+
+function switchLanguage() {
+    switch(selectedLang) {
+        case 'sr':
+            selectedLang = 'en';
+            break;
+        case 'ru':
+            selectedLang = 'sr';
+            break;
+        case 'en':
+            selectedLang = 'ru';
+            break;
+    }
+
     applyLanguage();
 }
 
