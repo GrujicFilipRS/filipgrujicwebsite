@@ -3,15 +3,30 @@ let selectedLang = localStorage.getItem('lang') == null ? 'sr' : localStorage.ge
 
 // Objects with all of the translations for each element
 const translationSR = {
-
+    "o_meni": "O meni",
+    "portfolio": "Portfolio",
+    "usluge": "Usluge",
+    "kontakt": "Kontakt",
+    "zdravo": "Zdravo, ja sam Filip Grujić!",
+    "sta_radim": "Specijalizujem se u pravljenju vebsajtova, desktop aplikacija i jednostavnih igrica."
 };
 
 const translationEN = {
-
+    "o_meni": "About me",
+    "portfolio": "Portfolio",
+    "usluge": "Services",
+    "kontakt": "Contacts",
+    "zdravo": "Hello, I am Filip Grujić!",
+    "sta_radim": "I specialize in making websites, desktop applications and simple games."
 };
 
 const translationRU = {
-    
+    "o_meni": "Обо мне",
+    "portfolio": "Портфолио",
+    "usluge": "Услуги",
+    "kontakt": "Контакты",
+    "zdravo": "Здравствуйте, я Филип Груич",
+    "sta_radim": "Я занимаюсь созданием вебсайтов, компьютерных программ и простых игр."
 };
 
 // Applying the languages
