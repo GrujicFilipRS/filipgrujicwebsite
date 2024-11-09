@@ -181,7 +181,7 @@ footer {
 }
 
 #contact div {
-    width: 100%;
+    width: 48%; /* Podesi širinu divova u kontakt sekciji */
     padding: 3%;
 }
 
@@ -201,6 +201,81 @@ footer {
 
 #contact a:hover {
     font-weight: bold;
+}
+
+/* Stil za mobile - ekran manje od 768px */
+@media (max-width: 768px) {
+    #contact {
+        flex-direction: column; /* Prelazak na vertikalni raspored */
+        margin: 5vw auto; /* Sredi margine na manjim ekranima */
+        width: 90vw; /* Širina se povećava na 90% */
+        margin-bottom: 100px; /* Smanji donji razmak */
+    }
+
+    #contact div {
+        width: 100%; /* Svaki div zauzima 100% širine na manjim ekranima */
+        padding: 2%; /* Manje razmaka */
+    }
+
+    #contact .usluge {
+        border-right: none; /* Ukloni desni border u mobilnom režimu */
+        margin-bottom: 3vw; /* Smanji razmak između usluga i kontakta */
+    }
+
+    #contact a {
+        font-size: 0.9rem; /* Manje fontove za linkove */
+    }
+
+    #contact div h1 {
+        font-size: 1.3em; /* Manje naslove u kontakt sekciji */
+    }
+
+    /* Dodatno stilizovanje linkova */
+    #contact a {
+        padding: 0.5rem 0;
+    }
+
+    #contact a:hover {
+        font-weight: normal; /* Ukloni podebljanje na hover */
+    }
+
+    /* Prilagođavanje veličine teksta za manje ekrane */
+    p {
+        font-size: 0.9em;
+    }
+}
+
+/* Stil za mobilne uređaje sa ekranima manjih od 480px */
+@media (max-width: 480px) {
+    #contact {
+        width: 95vw; /* Širina za vrlo male ekrane */
+        margin: 5vw auto;
+    }
+
+    #contact div {
+        width: 100%; /* Svaki div zauzima 100% širine */
+    }
+
+    #contact a {
+        font-size: 0.8rem; /* Još manji font za vrlo male ekrane */
+    }
+
+    #contact div h1 {
+        font-size: 1.2em; /* Manji naslovi za vrlo male ekrane */
+    }
+
+    #contact .usluge {
+        padding-bottom: 2vw; /* Smanji donji razmak između usluga */
+    }
+
+    p {
+        font-size: 0.85em; /* Manji font za paragraf */
+    }
+
+    .language-select button {
+        width: 30px;
+        height: 20px;
+    }
 }
 
 @media (max-width: 1024px) {
