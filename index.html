@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="sr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,78 +8,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
 <body>
-    <!-- Navigacija -->
-    <header>
-        <nav>
-            <a lang="o_meni" href="./index.html">O meni</a>
-            <a lang="portfolio" href="#portfolio">Portfolio</a>
-            <a lang="kontakt" href="#contact">Usluge/Kontakt</a>
-        </nav>
+    <nav>
+        <div class="portfolio-a">
+            <a href="./index.html">Portfolio</a>
+        </div>
+        <div class="kontakt-a">
+            <a href="./index.html">Kontakt</a>
+        </div>
 
         <div class="language-select">
             <button onclick="switchLanguage()" id="language-select-button"></button>
         </div>
-    </header>
+    </nav>
 
-    <div id="about">
-        <div class="info">
-            <h1 lang="zdravo">Zdravo, ja sam Filip Grujić!</h1>
-            <p lang="sta_radim">Specijalizujem se u pravljenju vebsajtova, desktop aplikacija i jednostavnih igrica.</p>
-
-            <div class="prog-lang-icons">
-                <img src="./img/python_icon.png">
-                <img src="./img/csharp_icon.png">
-                <img class="jsicon" src="./img/htmlcssandjs_icon.png"> 
-            </div>
+    <div class="hero">
+        <div class="hero-img">
+            <img src="./img/foto2.png">
         </div>
-        <div class="my-picture">
-            <img src='./img/foto2.png'>
-        </div>
-    </div>
-
-    <div id="portfolio">
-        <h1 lang="moj_portfolio">Moj portfolio</h1>
-        <div class="projects">
-            <div class="project">
-                <a lang="rocket_title" class="proj-title">Putanja rakete</a>
-                <p lang="rocket_desc" class="proj-desc">Program u python-u koji pomoću diferencijalnih jednačina izračunava putanju rakete, sa datim vrednostima</p>
-                <img src="./img/rocket_traj.png">
-            </div>
-
-            <div class="project">
-                <a lang="quiz_title" class="proj-title">Aplikacija kvizova</a>
-                <p lang="quiz_desc" class="proj-desc">C# program koji iz JSON fajlova učitava kvizove, koji od strane korisnika mogu da se igraju</p>
-                <img src="./img/quiz_app.png">
-            </div>
-        </div>
-    </div>
-
-    <div id="contact">
-        <div class="usluge">
-            <h1 lang="usluge-text">Usluge</h1>
-            <p lang="primam-zahteve" style="margin-top: 25px;">Primam zahteve za: </p>
-            <ul style="padding-left: 35px;">
-                <li lang="pravim-vebsajtove">pravljenje vebsajtova za manje i srednje biznise, kao i individualce</li>
-                <li lang="pravim-desktop">pravljenje desktop aplikacija malih/srednjih veličina</li>
-                <li lang="pravim-igrice">pravljenje igrica malih/srednjih veličina u Python-u ili Unity-ju</li>
-                <li lang="radim-domaci">čak i rađenje školskih zadataka iz programiranja</li>
-            </ul>
-            <p lang="cena" style="margin-top: 25px;">Cena uvek po dogovoru</p>
-        </div>
-        <div class="kontakt">
-            <h1 lang="kontakt-text">Kontakt</h1>
-            <p lang="ako-ima-pitanja" style="margin-top: 25px;">Ako imate bilo kakvih pitanja, ili želite da napravite zahtev za nešto od spomenutog, ovo su načini na koje me možete dobiti:</p><br><br>
-            E-mail: <a href="mailto:filipgrujicpersonal@gmail.com" target=”_blank”><i>filipgrujicpersonal@gmail.com</i></a><br>
-            <i><a href="https://www.instagram.com/filipgrujicbusiness/" target=”_blank” lang="moj-insta">Moj instagram nalog</a></i><br><br><br>
-
-            <p lang="odgovaram">Odgovaram brzo i na svaku poruku.</p>
+        <div class="zdravo-txt">
+            <p class="zdr-txt">Zdravo, ja sam</p>
+            <p class="moje-ime-txt">Filip Grujić</p>
+            <p class="sta-radim-txt">Specijalizujem se u pravljenju vebsajtova, desktop aplikacija i jednostavnih igrica.</p>
         </div>
     </div>
 </body>
 
 <footer>
-    <p lang="copyright">&copy; 2024 Filip Grujić. Sva prava zadržana.</p>
     <script src="langs.js"></script>
 </footer>
 </html>

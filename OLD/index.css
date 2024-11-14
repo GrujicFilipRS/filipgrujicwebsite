@@ -1,0 +1,411 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arimo', sans-serif;
+}
+
+header {
+    background-color: rgb(242, 86, 75);
+    height: 8vh;
+    display: flex;
+}
+
+nav {
+    padding-left: 25vw;
+    padding-right: 15vw;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a {
+    font-size: 1.35em;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    transition: 0.25s;
+    scroll-behavior: smooth;
+}
+
+.language-select {
+    width: 10vw;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.language-select button {
+    width: 35px;
+    height: 25px;
+    border-radius: 10px;
+    border-width: 1px;
+    background-image: url('./img/flag_serbia.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+nav a:hover {
+    color: black;
+    font-weight: bold;
+}
+
+#about {
+    width: 70vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-top: 5vw;
+    background-color: rgb(242, 86, 75);
+    border-radius: 35px;
+    border: 3px solid red;
+    color: white;
+    display: flex;
+}
+
+.info {
+    width: 60%;
+    text-align: center;
+}
+
+.my-picture {
+    width: 40%;
+}
+
+#about div h1 {
+    margin-top: 10%;
+    margin-bottom: 2%;
+}
+
+#about div p {
+    padding: 10%;
+}
+
+.my-picture img {
+    width: 40%;
+    padding-left: 30%;
+    padding-right: 30%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+.prog-lang-icons {
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.prog-lang-icons img {
+    width: 20%;
+}
+
+.jsicon {
+    padding-top: 5%;
+    height: 100%;
+}
+
+#portfolio {
+    width: 70vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-top: 5vw;
+    background-color: rgb(92, 179, 255);
+    border-radius: 35px;
+    border: 3px solid rgb(22, 100, 168);
+    color: white;
+}
+
+#portfolio h1 {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project {
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 3%;
+    text-align: center;
+    border: 2px rgb(22, 100, 168) solid;
+    border-radius: 25px;
+    padding: 1%;
+}
+
+.proj-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.project p {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.project img {
+    width: 100%;
+    border-radius: 20px;
+    max-height: 250px;
+}
+
+footer {
+    width: 100%;
+    color: white;
+    background-color: rgb(10, 10, 10);
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+#contact {
+    display: flex;
+    width: 70vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    justify-content: space-between;
+    margin-top: 5vw;
+    margin-bottom: 200px;
+}
+
+#contact div {
+    width: 48%; /* Podesi širinu divova u kontakt sekciji */
+    padding: 3%;
+}
+
+#contact div h1 {
+    text-align: center;
+}
+
+#contact .usluge {
+    border-right: 2px solid black;
+}
+
+#contact a {
+    color: black;
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+#contact a:hover {
+    font-weight: bold;
+}
+
+/* Stil za mobile - ekran manje od 768px */
+@media (max-width: 768px) {
+    #contact {
+        flex-direction: column; /* Prelazak na vertikalni raspored */
+        margin: 5vw auto; /* Sredi margine na manjim ekranima */
+        width: 90vw; /* Širina se povećava na 90% */
+        margin-bottom: 100px; /* Smanji donji razmak */
+    }
+
+    #contact div {
+        width: 100%; /* Svaki div zauzima 100% širine na manjim ekranima */
+        padding: 2%; /* Manje razmaka */
+    }
+
+    #contact .usluge {
+        border-right: none; /* Ukloni desni border u mobilnom režimu */
+        margin-bottom: 3vw; /* Smanji razmak između usluga i kontakta */
+    }
+
+    #contact a {
+        font-size: 0.9rem; /* Manje fontove za linkove */
+    }
+
+    #contact div h1 {
+        font-size: 1.3em; /* Manje naslove u kontakt sekciji */
+    }
+
+    /* Dodatno stilizovanje linkova */
+    #contact a {
+        padding: 0.5rem 0;
+    }
+
+    #contact a:hover {
+        font-weight: normal; /* Ukloni podebljanje na hover */
+    }
+
+    /* Prilagođavanje veličine teksta za manje ekrane */
+    p {
+        font-size: 0.9em;
+    }
+}
+
+/* Stil za mobilne uređaje sa ekranima manjih od 480px */
+@media (max-width: 480px) {
+    #contact {
+        width: 95vw; /* Širina za vrlo male ekrane */
+        margin: 5vw auto;
+    }
+
+    #contact div {
+        width: 100%; /* Svaki div zauzima 100% širine */
+    }
+
+    #contact a {
+        font-size: 0.8rem; /* Još manji font za vrlo male ekrane */
+    }
+
+    #contact div h1 {
+        font-size: 1.2em; /* Manji naslovi za vrlo male ekrane */
+    }
+
+    #contact .usluge {
+        padding-bottom: 2vw; /* Smanji donji razmak između usluga */
+    }
+
+    p {
+        font-size: 0.85em; /* Manji font za paragraf */
+    }
+
+    .language-select button {
+        width: 30px;
+        height: 20px;
+    }
+}
+
+@media (max-width: 1024px) {
+    nav {
+        padding-left: 5vw;
+        padding-right: 5vw;
+        width: 90vw;
+    }
+
+    #about, #portfolio {
+        width: 90vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+
+    .prog-lang-icons img {
+        width: 25%;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        height: auto;
+        padding: 1rem 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        gap: 1.5rem;
+    }
+
+    nav a {
+        font-size: 1em;
+        padding: 0.5rem 1rem;
+    }
+
+    .language-select {
+        width: auto;
+        margin-top: 0.5rem;
+    }
+
+    #about, #portfolio {
+        flex-direction: column;
+        width: 90vw;
+        margin: 5vw auto;
+    }
+
+    .info {
+        width: 100%;
+    }
+
+    .my-picture {
+        width: 100%;
+        text-align: center;
+    }
+
+    .my-picture img {
+        width: 50%;
+        padding: 0;
+    }
+
+    .prog-lang-icons img {
+        width: 25%;
+    }
+
+    /* Prilagođavanje sekcije #portfolio */
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project {
+        width: 80%;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    nav a {
+        font-size: 0.9em;
+        padding: 0.75rem;
+    }
+
+    .prog-lang-icons img {
+        width: 30%;
+    }
+
+    .language-select button {
+        width: 30px;
+        height: 20px;
+    }
+
+    #about .my-picture {
+        display: none !important;
+    }
+
+    /* Dodatno prilagođavanje sekcije #portfolio za male ekrane */
+    #portfolio {
+        width: 95vw;
+        margin-left: 2.5vw;
+        margin-right: 2.5vw;
+    }
+
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .project img {
+        width: 100%;
+        max-height: 200px;
+    }
+
+    .proj-title {
+        font-size: 1.2rem;
+    }
+}
+
