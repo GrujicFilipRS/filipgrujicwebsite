@@ -19,7 +19,7 @@ a {
 body {
     display: grid;
     grid-template-columns: repeat(12, 100px);
-    grid-template-rows: 120px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px;
+    grid-template-rows: 120px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 30px 30px 60px 60px 60px 60px 60px 60px 60px 120px 90px 120px 60px 60px 60px 60px 180px;
     grid-column-gap: 15px;
 }
 
@@ -93,12 +93,12 @@ nav div a:hover {
     grid-column-start: 2;
     grid-column-end: 12;
     grid-row-start: 2;
-    grid-row-end: 15;
+    grid-row-end: 16;
 
     display: grid;
     grid-column-gap: 15px;
     grid-template-columns: repeat(10, 100px);
-    grid-template-rows: repeat(13, 60px);
+    grid-template-rows: repeat(14, 60px);
 }
 
 .hero-img {
@@ -135,4 +135,134 @@ nav div a:hover {
 
 .sta-radim-txt {
     font-size: 1.5rem;
+}
+
+#portfolio {
+    border-top: 1px solid #3F5466;
+    grid-row-start: 16;
+    grid-row-end: 21;
+    grid-column-start: 1;
+    grid-column-end: 13;
+
+    display: grid;
+    grid-template-columns: repeat(12, 100px);
+    column-gap: 15px;
+    grid-template-rows: 60px 60px 60px 30px 30px 60px 60px 60px 30px 30px 30px 30px 60px 60px 60px 30px 120px;
+}
+
+.portfolio-title {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    font-size: 32pt;
+    font-weight: 600;
+    font-style: italic;
+    text-shadow: 2px 4px 4px black;
+}
+
+.proj1 {
+    grid-row-start: 5;
+    grid-row-end: 10;
+    grid-column-start: 1;
+    grid-column-end: 12;
+    
+    grid-template-columns: repeat(11, 100px);
+    column-gap: 15px;
+    grid-template-rows: repeat(8, 30px);
+
+    display:grid;
+}
+
+.proj1-img, .proj2-img {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 9;
+}
+
+.proj1-img img, .proj2-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.proj1-txt, .proj2-txt {
+    color: white;
+    grid-column-start: 6;
+    grid-column-end: 11;
+    grid-row-start: 2;
+    grid-row-end: 8;
+}
+
+.proj1-txt .title, .proj2-txt .title {
+    font-size: 30pt;
+    font-weight: 500;
+    text-shadow: 1.5px 3px 3px black;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.proj1-txt button, .proj2-txt button {
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 65px;
+    height: 25px;
+    background-color: #636363;
+    color: white;
+}
+
+.proj2 {
+    grid-row-start: 11;
+    grid-row-end: 18;
+    grid-column-start: 1;
+    grid-column-end: 12;
+
+    grid-template-columns: repeat(11, 100px);
+    column-gap: 15px;
+    grid-template-rows: repeat(8, 30px);
+
+    display:grid;
+
+    border-bottom: 1px solid #3F5466;
+}
+
+#kontakt {
+    grid-row-start: 31;
+    grid-row-end: 35;
+    grid-column-start: 3;
+    grid-column-end: 11;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color: white;
+}
+
+#kontakt .kontakt-text {
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    font-size: 36pt;
+    display: flex;
+
+    /* Make a horizontal flexbox (the default) */
+    flex-direction: row;
+
+    /* The important part: vertically center the items */
+    align-items: center;
+}
+
+#kontakt .kontakt-text p {
+    width: 100%;
+    font-weight: 700;
+    font-style: italic;
+    text-shadow: 2px 4px 4px black;
+}
+
+#kontakt .kontakt-info {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    display: grid;
+    grid-template-rows: repeat(4, 25%);
+    grid-template-columns: 100%;
 }
