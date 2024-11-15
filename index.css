@@ -19,7 +19,7 @@ a {
 body {
     display: grid;
     grid-template-columns: repeat(12, 100px);
-    grid-template-rows: 120px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 30px 30px 60px 60px 60px 60px 60px 60px 60px 120px 90px 120px 60px 60px 60px 60px 180px;
+    grid-template-rows: 120px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 60px 30px 30px 60px 60px 60px 60px 60px 60px 60px 120px 90px 120px 60px 60px 60px 60px 180px 45px;
     grid-column-gap: 15px;
 }
 
@@ -235,6 +235,7 @@ nav div a:hover {
     grid-column-end: 11;
     display: grid;
     grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(4, 25%);
     color: white;
 }
 
@@ -242,6 +243,8 @@ nav div a:hover {
     text-align: center;
     grid-column-start: 1;
     grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 5;
     font-size: 36pt;
     display: flex;
 
@@ -262,7 +265,57 @@ nav div a:hover {
 #kontakt .kontakt-info {
     grid-column-start: 2;
     grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 5;
     display: grid;
     grid-template-rows: repeat(4, 25%);
     grid-template-columns: 100%;
+}
+
+.cont-line img  {
+    max-height: 80%;
+    max-width: 60%;
+    margin-right: 30px;
+}
+
+.cont-line-1 {
+    grid-row-start: 1;
+}
+
+.cont-line-2 {
+    grid-row-start: 2;
+}
+
+.cont-line-3 {
+    grid-row-start: 3;
+}
+
+.cont-line-4 {
+    grid-row-start: 4;
+}
+
+.cont-line {
+    display: flex;
+}
+
+.cont-line p, .cont-line a {
+    font-size: 22pt;
+    font-weight: 600;
+}
+
+.cont-line div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.mail a {
+    font-size: 18pt;
+}
+
+footer {
+    width: 100%;
+    color: white;
+    background-color: #1a2026;
+    
 }
