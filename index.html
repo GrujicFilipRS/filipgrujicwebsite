@@ -10,101 +10,106 @@
     <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <div class="portfolio-a">
-            <a href="./index.html">Portfolio</a>
-        </div>
-        <div class="kontakt-a">
-            <a href="#kontakt">Kontakt</a>
-        </div>
-
-        <div class="language-select">
-            <button onclick="switchLanguage()" id="language-select-button"></button>
-        </div>
-    </nav>
-
-    <div class="hero">
-        <div class="hero-img">
-            <img src="./img/foto2.png">
-        </div>
-        <div class="zdravo-txt">
-            <p class="zdr-txt">Zdravo, ja sam</p>
-            <p class="moje-ime-txt">Filip Grujić</p>
-            <p class="sta-radim-txt">Specijalizujem se u pravljenju vebsajtova, desktop aplikacija i jednostavnih igrica.</p>
+    <div class="cont1">
+        <div class="cont">
+            <nav>
+                <div class="portfolio-a">
+                    <a href="./index.html">Portfolio</a>
+                </div>
+                <div class="kontakt-a">
+                    <a href="#kontakt">Kontakt</a>
+                </div>
+        
+                <div class="language-select">
+                    <button onclick="switchLanguage()" id="language-select-button"></button>
+                </div>
+            </nav>
+        
+            <div class="hero">
+                <div class="zdravo-txt">
+                    <p class="zdr-txt">Zdravo, ja sam</p>
+                    <p class="moje-ime-txt">Filip Grujić</p>
+                    <p class="sta-radim-txt">Specijalizujem se u pravljenju vebsajtova, desktop aplikacija i jednostavnih igrica.</p>
+                </div>
+                <div class="hero-img">
+                    <img src="./img/foto2.png">
+                </div>
+            </div>
+        
+            <div id="portfolio">
+                <a class="portfolio-title">PORTFOLIO</a>
+                <div class="proj1">
+                    <div class="proj1-img">
+                        <img src="./img/rocket-traj.png">
+                    </div>
+                    <div class="proj1-txt">
+                        <p class="title"><span>Putanja rakete</span></p>
+                        <p class="desc">Program u python-u koji pomoću diferencijalnih jednačina izračunava putanju rakete, sa datim početnim vrednostima</p>
+                        <a href="./portfolio.html"><button>Vidi više</button></a>
+                    </div>
+                </div>
+        
+                <div class="proj2">
+                    <div class="proj2-img">
+                        <img src="./img/quiz-proj.png">
+                    </div>
+                    <div class="proj2-txt">
+                        <p class="title"><span>Aplikacija kvizova</span></p>
+                        <p class="desc">C# program koji iz JSON fajlova učitava kvizove, koji od strane korisnika mogu da se igraju</p>
+                        <a href="./portfolio.html"><button>Vidi više</button></a>
+                    </div>
+                </div>
+            </div>
+        
+            <div id="kontakt">
+                <div class="kontakt-text">
+                    <p>KONTAKT</p>
+                </div>
+        
+                <div class="kontakt-info">
+                    <div class="cont-line cont-line-1">
+                        <div>
+                            <a class="skibidi" href="tel:+381644534957"><img src="./img/phone-ico.png"></a>
+                        </div>
+                        <div>
+                            <p>+381 644534957</p>
+                        </div>
+                    </div>
+                    <div class="cont-line cont-line-2">
+                        <div>
+                            <a class="skibidi" href="https://www.instagram.com/filipgrujicbusiness/" target="_blank"><img src="./img/insta-ico.png"></a>
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com/filipgrujicbusiness/" target="_blank">Instagram nalog</a>
+                        </div>
+                    </div>
+                    <div class="cont-line cont-line-3">
+                        <div>
+                            <a class="skibidi" href="https://t.me/Ficfiric123" target="_blank"><img src="./img/teleg-ico.png"></a>
+                        </div>
+                        <div>
+                            <a href="https://t.me/Ficfiric123" target="_blank">Telegram nalog</a>
+                        </div>
+                    </div>
+                    <div class="cont-line cont-line-4">
+                        <div>
+                            <a class="skibidi" href="mailto:filipgrujicpersonal@gmail.com" target="_blank"><img src="./img/gmail-ico.png"></a>
+                        </div>
+                        <div class="mail">
+                            <a href="mailto:filipgrujicpersonal@gmail.com" target="_blank">filipgrujicpersonal@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
-    <div id="portfolio">
-        <a class="portfolio-title">PORTFOLIO</a>
-        <div class="proj1">
-            <div class="proj1-img">
-                <img src="./img/rocket-traj.png">
-            </div>
-            <div class="proj1-txt">
-                <p class="title"><span>Putanja rakete</span></p>
-                <p class="desc">Program u python-u koji pomoću diferencijalnih jednačina izračunava putanju rakete, sa datim početnim vrednostima</p>
-                <a href="./portfolio.html"><button>Vidi više</button></a>
-            </div>
+    <footer>
+        <div>
+            <p>© 2024. Filip Grujić. Sva prava zadržana</p>
         </div>
-
-        <div class="proj2">
-            <div class="proj2-img">
-                <img src="./img/quiz-proj.png">
-            </div>
-            <div class="proj2-txt">
-                <p class="title"><span>Aplikacija kvizova</span></p>
-                <p class="desc">C# program koji iz JSON fajlova učitava kvizove, koji od strane korisnika mogu da se igraju</p>
-                <a href="./portfolio.html"><button>Vidi više</button></a>
-            </div>
-        </div>
-    </div>
-
-    <div id="kontakt">
-        <div class="kontakt-text">
-            <p>KONTAKT</p>
-        </div>
-
-        <div class="kontakt-info">
-            <div class="cont-line cont-line-1">
-                <div>
-                    <img src="./img/phone-ico.png">
-                </div>
-                <div>
-                    <p>+381 644534957</p>
-                </div>
-            </div>
-            <div class="cont-line cont-line-2">
-                <div>
-                    <img src="./img/insta-ico.png">
-                </div>
-                <div>
-                    <a href="https://www.instagram.com/filipgrujicbusiness/" target="_blank">Instagram nalog</a>
-                </div>
-            </div>
-            <div class="cont-line cont-line-3">
-                <div>
-                    <img src="./img/teleg-ico.png">
-                </div>
-                <div>
-                    <a href="https://t.me/Ficfiric123" target="_blank">Telegram nalog</a>
-                </div>
-            </div>
-            <div class="cont-line cont-line-4">
-                <div>
-                    <img src="./img/gmail-ico.png">
-                </div>
-                <div class="mail">
-                    <a href="mailto:filipgrujicpersonal@gmail.com" target="_blank">filipgrujicpersonal@gmail.com</a>
-                </div>
-            </div>
-        </div>
-    </div>
+        <script src="langs.js"></script>
+    </footer>
 </body>
 
-<footer>
-    <div>
-        <p>© 2024. Filip Grujić. Sva prava zadržana</p>
-    </div>
-    <script src="langs.js"></script>
-</footer>
+
 </html>
