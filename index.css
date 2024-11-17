@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .cont1 {
@@ -208,7 +209,8 @@ nav div a:hover {
     margin-top: 10px;
     border: 1px solid black;
     border-radius: 5px;
-    width: 65px;
+    padding-left: 5px;
+    padding-right: 5px;
     height: 25px;
     background-color: #636363;
     color: white;
@@ -429,18 +431,18 @@ footer {
     }
 
     .hero {
-        grid-column-start: 2;
-        grid-column-end: 6;
+        grid-column-start: 1;
+        grid-column-end: 7;
         grid-row-start: 3;
         grid-row-end: 9;
         grid-column-gap: 15px;
-        grid-template-columns: repeat(4, 55px);
+        grid-template-columns: repeat(6, 55px);
         grid-template-rows: repeat(6, 70px);
     }
 
     .zdravo-txt {
         grid-column-start: 1;
-        grid-column-end: 5;
+        grid-column-end: 7;
         grid-row-start: 1;
         grid-row-end: 7;
         text-align: center;
@@ -451,9 +453,14 @@ footer {
     }
 
     .hero-img {
-        grid-column-start: 2;
-        grid-column-end: 4;
+        grid-column-start: 3;
+        grid-column-end: 5;
         grid-row-start: 2;
+    }
+
+    .sta-radim-txt {
+        width: 265px;
+        margin-left: 70px;
     }
 
     .moje-ime-txt {
