@@ -338,6 +338,18 @@ footer {
     align-items: center;
 }
 
+.more-projs {
+    grid-row-start: 29;
+    grid-row-end: 30;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    color: white;
+}
+
+.more-projs a {
+    font-size: 1.2em;
+}
+
 @media only screen and (max-width: 1460px) {
     .cont {
         grid-template-columns: repeat(12, 80px);
@@ -409,9 +421,14 @@ footer {
         grid-template-rows: 120px 60px 70px 70px 70px 70px 70px 70px 60px 0px 0px 0px 0px 60px 60px 60px 30px 30px 60px 60px 60px 60px 60px 60px 60px;
     }
 
+    .more-projs {
+         display: none;
+    }
+
     nav {
         grid-template-columns: repeat(6, 55px);
         grid-column-end: 7;
+        grid-row-start: 21;
         column-gap: 15px;
     }
 
