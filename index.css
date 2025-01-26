@@ -428,7 +428,7 @@ footer {
     nav {
         grid-template-columns: repeat(6, 55px);
         grid-column-end: 7;
-        grid-row-start: 21;
+        grid-row-start: 1;
         column-gap: 15px;
     }
 
